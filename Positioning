@@ -1,0 +1,7 @@
+func _ready():
+    var sprite = $Sprite2D
+    var screen_size = get_viewport_rect().size
+    var sprite_size = sprite.texture.get_size() 
+
+    # Position the bottom-right of the sprite at the bottom-right of the screen
+    sprite.position = screen_size - sprite_size 
